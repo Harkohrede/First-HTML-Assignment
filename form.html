@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+       #skip{
+        color: black;
+        border: 0.5px solid;
+        font-size: 25px;
+        text-decoration: none;
+        border-radius: 20px;
+        padding: 5px;
+      }
+      #skip:hover{
+        background-color: black;
+        color: white;
+      }
+      nav{
+        margin-left: 1000px;
+        list-style: none;
+        margin-top: 20px;
+        padding-right: 10px;
+      }
+      nav li{
+        display: inline-block;
+        margin: 5px;
+      }
+      nav li a{
+        color: black;
+        border: 0.5px solid;
+        font-size: 20px;
+        text-decoration: none;
+        border-radius: 20px;
+        padding: 5px;
+      }
+      nav li a:hover{
+        background-color: black;
+        color: white;
+      }
+      #topic{
+        text-align: center;
+      }
+      label{
+        display: block;
+      }
+      .container{
+        margin: auto;
+        border: 0.5px solid;
+        max-width: 500px;
+        border-radius: 10px;
+      }
+      h2,p{
+        text-align: center;
+      }
+      input,select{
+        display: inline-block;
+        width:100%;
+        padding:10px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        border: 0.3px solid;
+        margin-block: 5px;
+      }
+      button{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 480px
+      }
+      td{
+        padding: 0 8px;
+      }
+    </style>
+</head>
+<body>
+    <a href="#main" id="skip">Skip Navigation</a>
+    <header>
+        <h1 id="topic">
+          OSENI QUAYUM AKOREDE
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./form.html">REGISTER</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main id="main">
+      <div class="container">
+        <h2>APPLICATION FORM</h2>
+        <p>Fill in your details</p>
+        <form action="alt.php" method="post">
+          <table>
+            <tr>
+              <td>
+                <label for="first">FIRST NAME</label>
+                <input type="text" id="first" placeholder="enter first name">
+              </td>
+              <td>
+                <label for="last">LAST NAME</label>
+                <input type="text" id="last" placeholder="enter last name">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="gender">GENDER</label>
+                <select id="gender">
+                  <option>select gender</option>
+                  <option>male</option>
+                  <option>female</option>
+                </select>
+              </td>
+              <td>
+                <label for="dob">DATE OF BIRTH</label>
+                <input type="date" id="dob" placeholder="enter date of birth">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" placeholder="enter email address">
+              </td>
+              <td>
+                <label for="edu">EDUCATION LEVEL</label>
+                <select name="edu" id="edu">
+                  <option>select level of education</option>
+                  <option value="high school">HIGH SCHOOL</option>
+                  <option value="bsc">BSC</option>
+                  <option value="msc">MSC</option>
+                  <option value="phd">PHD</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="country">COUNTRY</label>
+                <input type="text" id="country" placeholder="select your country">
+              </td>
+              <td>
+                <label for="state">STATE</label>
+                <input type="text" id="state" placeholder="select your state">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="employ">EMPLOYMENT STATUS</label>
+                <select name="employ" id="employ">
+                  <option>select employment status</option>
+                  <option>UNEMPLOYED</option>
+                  <option>EMPLOYED</option>
+                  <option>SELF-EMPLOYED</option>
+                </select>
+              </td>
+              <td>
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" id="phone" placeholder="08100022563">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="school">CHOOSE SCHOOL</label>
+                <select name="school" id="school">
+                  <option value="">choose school</option>
+                  <option value="">PRODUCT</option>
+                  <option value="">DATA</option>
+                  <option value="">engineering</option>
+                </select>
+              </td>
+              <td>
+                <label for="course">CHOOSE COURSE OF STUDY</label>
+                <select name="course" id="course">
+                  <option value="">choose course</option>
+                  <option value="">DATA ANALYSIS</option>
+                  <option value="">PRODUCT MANAGEMENT</option>
+                  <option value="">PRODUCT DESIGN</option>
+                  <option value="">FRONTEND</option>
+                  <option value="">BACKEND</option>
+                  <option value="">CLOUD</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="connect">HOW DID YOU HEAR ABOUT US?</label>
+                <input type="text" id="connect" placeholder="how did you hear about us?">
+              </td>
+              <td>
+                <label for="scholarship">DISCOUNT CODE</label>
+                <input type="text" id="scholarship" placeholder="enter discount code">
+              </td>
+            </tr>
+          </table>
+        <p>By clicking continue, I agree to <a href="#"> Terms of Use</a> and acknowledge that I
+          have read the  <a href="#">Privacy Policy</a>.</p>
+          <button type="submit">PROCEED</button> 
+          <p>Already have an account? <a href="#">sign in</a></p>
+        </form>  
+      </div>
+    </main>
+</body>
+</html>
